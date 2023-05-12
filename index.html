@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+	<script src="https://wedew.id/combine/a0b317ad2301a333640fe25a25a09efe-1682791473">
+	</script>
+</head>
+<body>
+    <form>
+            <input name="nama" id="nama" type="text"   placeholder="Nama" required/>
+            <textarea  name="pesan" id="pesan" placeholder="Ucapan" required></textarea>
+   
+     
+<select name="status" id="status" >
+<option value="hadir">Hadir</option>
+<option value="tidak hadir">Tidak hadir</option>
+</div>
+
+<br>
+<input id="submit" type="button" class="btn btn-success" value="Submit" />
+</form>
+<iframe src="https://zejiaisna.000webhostapp.com/baru.php" height="300" width="300" ></iframe>
+<script>
+$(document).ready(function() {
+
+$("#submit").click(function() {
+
+var nama = $("#nama").val();
+var pesan = $("#pesan").val();
+var status = $("#status").val();
+
+
+
+$.ajax({
+type: "POST",
+url: "https://zejiaisna.000webhostapp.com/store.php",
+data: {
+nama: nama,
+status: status,
+pesan: pesan,
+},
+cache: false,
+success: function(data) {
+//  alert(data);
+//   $('.tampildata').load("store.php");
+$('#tablekui').html(data);
+location.reload();
+}
+});
+
+});
+
+});
+</script>
+
+</body>
+</html>
