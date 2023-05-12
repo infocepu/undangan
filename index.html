@@ -1074,75 +1074,73 @@
 	<script src="https://wedew.id/combine/a0b317ad2301a333640fe25a25a09efe-1682791473">
 	</script>
 </head>
-<body>
-    <div class="container" id="ucapan">
-				<div class="row">
-					<div class="grid">
-						<div class="d-flex justify-content-center">
-							<div class="col-xl-8 col-lg-12">
-								<form>
-									<div class="row mt-2">
-										<div class="mb-3">
-											<input class="form-control border-0 shadow-sm" id="nama" name="nama" placeholder="Nama" type="text">
-										</div>
-										<div class="mb-3">
-											<textarea class="form-control border-0 shadow-sm" id="pesan" name="pesan" placeholder="Berikan Ucapan Dan Doa Restu" required="" rows="5"></textarea>
-										</div>
-										<div class="mb-3">
-											<select aria-label="Konfirmasi Kehadiran" class="form-select border-0 shadow-sm" id="status" name="status">
-												<option value="hadir">
-													Hadir
-												</option>
-												<option value="tidak hadir">
-													Tidak hadir
-												</option>
-											</select>
-										</div>
-										<div class="mb-3">
-											<input class="btn btn-default font-two fw-bold" id="submit" type="button" value="Submit">
-										</div>
-									</div>
-								</form>
-								<div class="embed-responsive embed-responsive-4by3">
-									<iframe class="embed-responsive-item" src="https://zejiaisna.000webhostapp.com/baru.php"></iframe>
-								</div>
-								<script>
-								$(document).ready(function() {
+<body class="bg-image">
+	<div class="website-blocks has-cover">
+        <div class="container" id="ucapan">
+                    <div class="row">
+                        <div class="grid">
+                            <div class="d-flex justify-content-center">
+                                <div class="col-xl-8 col-lg-12">
+                                    <form>
+                                        <div class="row mt-2">
+                                            <div class="mb-3">
+                                                <input class="form-control border-0 shadow-sm" id="nama" name="nama" placeholder="Nama" type="text">
+                                            </div>
+                                            <div class="mb-3">
+                                                <textarea class="form-control border-0 shadow-sm" id="pesan" name="pesan" placeholder="Berikan Ucapan Dan Doa Restu" required="" rows="5"></textarea>
+                                            </div>
+                                            <div class="mb-3">
+                                                <select aria-label="Konfirmasi Kehadiran" class="form-select border-0 shadow-sm" id="status" name="status">
+                                                    <option value="hadir">
+                                                        Hadir
+                                                    </option>
+                                                    <option value="tidak hadir">
+                                                        Tidak hadir
+                                                    </option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <input class="btn btn-default font-two fw-bold" id="submit" type="button" value="Submit">
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <script>
+                                    $(document).ready(function() {
 
-								    $("#submit").click(function() {
+                                        $("#submit").click(function() {
 
-								        var nama = $("#nama").val();
-								        var pesan = $("#pesan").val();
-								        var status = $("#status").val();
+                                            var nama = $("#nama").val();
+                                            var pesan = $("#pesan").val();
+                                            var status = $("#status").val();
 
-								    
+                                        
 
-								        $.ajax({
-								            type: "POST",
-								            url: "https://zejiaisna.000webhostapp.com/store.php",
-								            data: {
-								                nama: nama,
-								                status: status,
-								                pesan: pesan,
-								            },
-								            cache: false,
-								            success: function(data) {
-								              //  alert(data);
-								           //   $('.tampildata').load("store.php");
-								              $('#tablekui').html(data);
-								              location.reload();
-								            }
-								        });
-								         
-								    });
+                                            $.ajax({
+                                                type: "POST",
+                                                url: "https://zejiaisna.000webhostapp.com/store.php",
+                                                data: {
+                                                    nama: nama,
+                                                    status: status,
+                                                    pesan: pesan,
+                                                },
+                                                cache: false,
+                                                success: function(data) {
+                                                //  alert(data);
+                                            //   $('.tampildata').load("store.php");
+                                                $('#tablekui').html(data);
+                                                location.reload();
+                                                }
+                                            });
+                                            
+                                        });
 
-								});
-								</script>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
+                                    });
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </div>
 </body>
 </html>
