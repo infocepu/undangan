@@ -1,13 +1,1622 @@
-
+<?php
+echo $_GET['link'];
+echo $_GET['id'];
+?>
 <!DOCTYPE html>
 <html lang="id">
 <head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta content="Pernikahan Aji & Eka" name="description">
+	<meta content="id_ID" property="og:locale">
+	<meta content="article" property="og:type">
+	<meta content="Undangan Digital" property="og:title">
+	<meta content="Pernikahan Aji & Eka" property="og:description">
+	<meta content="https://infoblora.github.io/" property="og:url">
+	<meta content="infoblora.github.io" property="og:site_name">
+	<meta content="2023-03-04T06:49:06+00:00" property="article:modified_time">
+	<meta content="https://wekita.id/wp-content/uploads/2023/03/BAHAN-TEMA-02-CO-AK-1.webp" property="og:image">
+	<meta content="800" property="og:image:width">
+	<meta content="800" property="og:image:height">
+	<meta content="image/webp" property="og:image:type">
+	<meta content="summary_large_image" name="twitter:card">
+	<meta content="Estimasi waktu membaca" name="twitter:label1">
+	<meta content="2 menit" name="twitter:data1"><!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com" rel="preconnect">
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<link href="https://fonts.googleapis.com" rel="preconnect">
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<link href="https://fonts.googleapis.com" rel="preconnect">
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<link href="https://fonts.googleapis.com" rel="preconnect">
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<title>Undangan Digital</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet">
+	<style>
+	       .img-u-berdua{
+	   width:21em;
+	}
 
+	.gradien-1{
+	   background-image: linear-gradient(rgba(217, 217, 217, 0), rgba(0, 0, 0, 0.90));
+	}
+
+	/* FONT */
+	.font-size-96{
+	   font-size: 96px;
+	}
+
+	.font-size-55{
+	   font-size: 55px;
+	}
+
+	.model-1{
+	   background-color: transparent;
+	   position: fixed;
+	   width: 100%;
+	   height: 100%;
+	   z-index: 2002;
+	   top: 10px;
+	   color: #fff;
+	   left: 0;
+	}
+
+	.model-2{
+	   width: 100%;
+	   display: flex;
+	   height: 100%;
+	   flex-direction: column;
+	   justify-content: center;
+	}
+
+	.btn-default{
+	   background-color: #c5afa0;
+	   color: #fff;
+	   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	   pacity: 0.6;
+	   transition: 0.3s;
+	}
+
+	.btn-default:hover{
+	   background-color: #4C823C;
+	   color:#fff;
+	}
+
+	.font-two{
+	   font-family: 'Inter', sans-serif;
+	}
+
+	.img-flower{
+	   width: 50%;
+	}
+
+	.bg-default{
+	   background-color:#c5afa0;
+	}
+
+	.bg-default-one{
+	   background-color:#c5afa0;
+	   position: absolute;
+	   width: 100%;
+	   height:265px;
+	   z-index: -1;
+	}
+
+	.flower-left-3{
+	   width: 400px;
+	   margin-top: 600px;
+	}
+
+	.flower-right-3{
+	   margin-top: 200px;
+	   width: 400px;
+	}
+
+	.bg-pjk{
+	   background-color: #EFE6C4;
+	}
+
+	.border-default{
+	   border-color: #4E1818!important;
+	}
+
+	.posisi-image{
+	   position: absolute;
+	   margin-top: -290px;
+	}
+
+
+
+
+
+
+
+	.font-one{
+	   font-family: 'Great Vibes', cursive;
+	}
+
+
+
+	.font-tree{
+	   font-family: 'Quicksand', sans-serif;
+	}
+
+	.font-bold{
+	   font-weight: bold;
+	}
+
+	.font-size-55{
+	   font-size: 55px;
+	}
+
+
+
+
+
+	.bg-circle-love{
+	   background-color: #EFE6C4;
+	}
+
+
+
+	.rounded-default{
+	   border-radius: 0.5em;
+	}
+
+	.mt-100{
+	   margin-top: 100px;
+	}
+
+	.mt-min15{
+	   margin-top: -15px;
+	}
+
+	.mt-min10{
+	   margin-top: -10px;
+	}
+
+	.color-one{
+	   color: #4E1818;
+	}
+
+	.componen-left{
+	   position: absolute;
+	}
+
+	.componen-right{
+	   position: absolute;
+	}
+
+	/* Flower */
+
+	.flower-right-2{
+	   margin-top: -500px;
+	}
+
+	.flower-left-2{
+	   margin-top: -500px;
+	}
+
+	.flower-right-4{
+	   margin-top: -300px;
+	   width: 500px;
+	}
+
+	.flower-left-4{
+	   width: 500px;
+	}
+
+	/* Animasi glombang */
+	.rotate-img-180 {
+	   -webkit-transform:rotate(180deg);
+	   -moz-transform: rotate(180deg);
+	   -ms-transform: rotate(180deg);
+	   -o-transform: rotate(180deg);
+	   transform: rotate(180deg);
+	}
+
+	.rotate-img-20 {
+	   /* -webkit-transform:rotate(20deg);
+	   -moz-transform: rotate(20deg);
+	   -ms-transform: rotate(20deg);
+	   -o-transform: rotate(20deg);
+	   transform: rotate(20deg); */
+	}
+
+	.waves {
+	   position: relative;
+	   width: 100%;
+	   height: 15vh;
+	   margin-bottom: -7px;
+	   min-height: 100px;
+	   max-height: 150px;
+	}
+
+	.content {
+	   position: relative;
+	   height: 20vh;
+	   text-align: center;
+	   background-color: white;
+	}
+
+	.parallax>use {
+	   animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+	}
+
+	.parallax>use:nth-child(1) {
+	   animation-delay: -14s;
+	   animation-duration: 7s;
+	   }
+
+	.parallax>use:nth-child(2) {
+	   animation-delay: -16s;
+	   animation-duration: 10s;
+	   }
+
+	.parallax>use:nth-child(3) {
+	   animation-delay: -18s;
+	   animation-duration: 13s;
+	   }
+
+	.parallax>use:nth-child(4) {
+	   animation-delay: -20s;
+	   animation-duration: 20s;
+	   }
+
+	@keyframes move-forever {
+	   0% {
+	       transform: translate3d(-90px, 0, 0);
+	   }
+	   100% {
+	       transform: translate3d(85px, 0, 0);
+	   }
+	}
+
+	/* LINK VETICAL */
+	.link-vertical {
+	   display: flex;
+	   flex-flow: row;
+	   min-height: 100px;
+	   position: relative;
+	}
+
+	span.icon-love-one {
+	   margin-right: 50px;
+	   text-align: center;
+	   width: 2em;
+	   height: 2em;
+	   border-radius: 100%;
+	   z-index: 1;
+	   margin-top: 16px;
+	   margin-left: 8px;
+	}
+
+	span.icon-love {
+	   margin-right: 50px;
+	   text-align: center;
+	   width: 3em;
+	   height: 3em;
+	   border-radius: 100%;
+	   z-index: 1;
+	}
+
+	span.icon-love-last {
+	   margin-right: 50px;
+	   text-align: center;
+	   width:2em;
+	   height:2em;
+	   border-radius: 100%;
+	   z-index: 1;
+	   margin-top: -88px;
+	   margin-left: 8px;
+	}
+
+	span.line {
+	 position: absolute;
+	 height: 100%;
+	 margin-top: 48px;
+	 left:22px;
+	 border: solid #EFE6C4;
+	}
+
+	span.line-one {
+	 position: absolute;
+	 height: 210px;
+	 margin-top: 48px;
+	 left:22px;
+	 border: solid #EFE6C4;
+	}
+
+	span.line-last {
+	 position: absolute;
+	 height: 96px;
+	 margin-top: 48px;
+	 left: 22px;
+	 border: solid #EFE6C4;
+	}
+
+	span.love-mt-1{
+	   margin-top: 10px;
+	}
+
+	span.love-mt-2{
+	   margin-top: 20px;
+	}
+
+	.wh-maps{
+	   height: 20rem;
+	   width: 59rem;
+	   border:0;
+	   z-index: 222;
+	}
+
+	/* NAVBAR */
+	.navbar{
+	   box-shadow: none;
+	   height: 4.5rem;
+	   max-width: 800px !important;
+	   margin: 0 auto !important;
+	   padding: 0 !important;
+	   background-color: #e2d7d0;
+	}
+
+	.radius-nav{
+	   /* box-shadow: rgb(0 0 0 / 15%) 0px -10px 20px; */
+	   border-radius: 60px 60px 0px 0px;
+	}
+
+	.navbar-shadow{
+	 -webkit-box-shadow: 0 4px 6px -6px #222;
+	 -moz-box-shadow: 0 4px 6px -6px #222;
+	 box-shadow: 0 3px 6px -6px #222;
+	}
+
+	.navbar .navbar-brand{
+	   display: inline-block;
+	   padding-top: 0.36328125rem;
+	   padding-bottom: 0.36328125rem;
+	   margin-right: 1rem;
+	   font-size: 1.09375rem;
+	   line-height: inherit;
+	   white-space: nowrap;
+	}
+
+	.navbar .nav-flex-icons {
+	   flex-direction: row;
+	}
+
+	.navbar-nav {
+	   display: flex;
+	   flex-direction: column;
+	   padding-left: 0;
+	   margin-bottom: 0;
+	   list-style: none;
+	}
+
+	.nav-buttom{
+	   background-color: #ffffff;
+	   height: 5rem;
+	}
+
+	.flex-fill{
+	   align-items: center;
+	   display: flex;
+	   justify-content: center;
+	   margin: auto;
+	   width: 10em;
+	}
+
+	.span-icon-nav-buttom{
+	   align-items: center;
+	   display: flex;
+	   font-size: 1rem;
+	   justify-content: center;
+	   margin: auto;
+	}
+
+	.icon-nav-buttom-b{
+	   width: 2.5em;
+	   color:
+	}
+
+	.icon-nav-buttom-m{
+	   width: 2.5em;
+	}
+
+	.icon-nav-buttom-a{
+	   width: 2.2em;
+	}
+
+	.nav-title{
+	   font-size: 1.1rem;
+	   font-weight: bold;
+	   color: black;
+	   font-family: 'Quicksand', sans-serif;
+	}
+
+	.app-font-1{
+	   font-size:22px;
+	}
+
+	.w-shadow-1{
+	   width: 40rem; height: 13rem;
+	}
+
+	.width-ctuk-1{
+	   height: 15rem;
+	}
+
+	.width-maps-1{
+	   height: 21rem;
+	}
+
+	.p-time{
+	   padding-right: 50px;
+	   padding-left: 50px;
+	}
+
+	/* tutup navbar */
+	@media (max-width: 1400px) {
+	   .wh-maps{
+	       width: 51rem;
+	       border:0;
+	   }
+	}
+
+	@media (max-width: 1200px) {
+	   .componen-left{
+	       width: 35rem;
+	   }
+
+	   .componen-right{
+	       width: 35rem;
+	   }
+
+	   .flower-right-2{
+	       margin-top: -300px;
+	       width: 25rem;
+	   }
+
+	   .flower-left-2{
+	       margin-top: -400px;
+	       width: 30rem;
+	   }
+
+	   .flower-right-3{
+	       margin-top: 150px;
+	       width: 15rem;
+	   }
+
+	   .flower-left-3{
+	       margin-top: 500px;
+	       width: 15rem;
+	   }
+
+	   .flower-right-4{
+	       margin-top: -200px;
+	       width: 350px;
+	   }
+
+	   .flower-left-4{
+	       width: 350px;
+	   }
+
+	   .wh-maps{
+	       width: 42.5rem;
+	       border:0;
+	   }
+
+	   span.icon-love {
+	       width: 3em;
+	       height: 2.5em;
+	       margin-left: 5px;
+	   }
+
+	   .flower-card{
+	       margin-top: 70px;
+	       width: 8em;
+	   }
+	}
+
+	@media (max-width: 992px) {
+	   .flower-right-3{
+	       margin-top: 0px;
+	   }
+
+	   .flower-left-3{
+	       margin-top: 400px;
+	       width: 15rem;
+	   }
+	   .wh-maps{
+	       width: 42.5rem;
+	       border:0;
+	   }
+
+	   span.icon-love {
+	       width: 2.5em;
+	       height: 2.5em;
+	       margin-left: 5px;
+	   }
+
+	/* navbar */
+	   .flex-fill{
+	       width: 9.1em;
+	   }
+	}
+
+	@media (max-width: 768px) {
+	   .componen-right{
+	       width: 25rem;
+	   }
+
+	   .flower-right-2{
+	       margin-top: -200px;
+	       width: 15rem;
+	   }
+
+	   .flower-left-2{
+	       margin-top: -250px;
+	       width: 17rem;
+	   }
+
+	   .flower-right-3{
+	       margin-top: 100px;
+	       width: 12rem;
+	   }
+
+	   .flower-left-3{
+	       margin-top: 400px;
+	       width: 12rem;
+	   }
+
+	   .flower-right-4{
+	       display: none;
+	   }
+
+	   .flower-left-4{
+	       display: none;
+	   }
+
+	   .waves {
+	       height: 40px;
+	       min-height: 40px;
+	   }
+
+	   /* navbar */
+	   .navbar{
+	       height: 4.5rem;
+	       max-width: 570px !important;
+	   }
+
+	   .nav-buttom{
+	       height: 4.8rem;
+	   }
+
+	   .flex-fill{
+	       width: 7em;
+	   }
+
+	   .icon-nav-buttom-b{
+	       width: 2em;
+	   }
+
+	   .icon-nav-buttom-m{
+	       width: 2em;
+	   }
+
+	   .icon-nav-buttom-a{
+	       width: 1.7em;
+	   }
+
+	   .nav-title{
+	       font-size: 1rem;
+	   }
+
+	   .app-font-1{
+	       font-size:19px;
+	   }
+
+	   .posisi-image {
+	       width: 17em;
+	       margin-top: -190px;
+	   }
+	}
+
+	@media (max-width: 576px) {
+	   .componen-left{
+	       width: 16rem;
+	   }
+
+	   .componen-right{
+	       width: 16rem;
+	   }
+
+	   .flower-right-2{
+	       margin-top: -200px;
+	       width: 20rem;
+	       z-index: -1;
+	   }
+
+	   .flower-left-2{
+	       margin-top: -250px;
+	       width: 17rem;
+	       z-index: -1;
+	   }
+
+	   .flower-right-3{
+	       margin-top: 470px;
+	       width: 11rem;
+	   }
+
+	   .flower-left-3{
+	       margin-top: 550px;
+	       width: 11rem;
+	   }
+
+	   .flower-right-4{
+	       display: none;
+	   }
+
+	   .flower-left-4{
+	       display: none;
+	   }
+
+	   .waves {
+	       height: 40px;
+	       min-height: 40px;
+	   }
+
+	   /* navbar */
+	   .navbar{
+	       height: 4.5rem;
+	       max-width: 450px !important;
+	   }
+
+	   .nav-buttom{
+	       height: 4rem;
+	   }
+
+	   .radius-nav{
+	       border-radius: 40px 40px 0px 0px;
+	   }
+
+	   .flex-fill{
+	       width: 5.6em;
+	   }
+
+	   .icon-nav-buttom-b{
+	       width: 1.5em;
+	   }
+
+	   .icon-nav-buttom-m{
+	       width: 1.5em;
+	   }
+
+	   .icon-nav-buttom-a{
+	       width: 1.5em;
+	   }
+
+	   .nav-title{
+	       font-size: 13px;
+	   }
+
+	   .app-font-1{
+	       font-size:14px;
+	   }
+
+	   .w-shadow-1{
+	       width: 25rem; height: 13rem;
+	   }
+
+	   span.icon-love {
+	       margin-right: 10px;
+	   }
+
+	   .wh-maps{
+	       width: 28.1rem;
+	       border:0;
+	   }
+
+	   .p-time{
+	       padding-right: 30px;
+	       padding-left: 30px;
+	   }
+
+	   .flower-card {
+	       display: none;
+	   }
+
+	@media (min-width: 325px) and (max-width: 469px) {
+	   .componen-left{
+	       width: 14rem;
+	       z-index: -1;
+	   }
+
+	   .componen-right{
+	       width: 10rem;
+	       z-index: -1;
+	   }
+
+	   .flower-right-2{
+	       margin-top: -200px;
+	       width: 20rem;
+	       z-index: -1;
+	   }
+
+	   .flower-left-2{
+	       margin-top: -250px;
+	       width: 17rem;
+	       z-index: -1;
+	   }
+
+	   .flower-right-3{
+	       display: none;
+	   }
+
+	   .flower-left-3{
+	       display: none;
+	   }
+
+	   .flower-right-4{
+	       display: none;
+	   }
+
+	   .flower-left-4{
+	       display: none;
+	   }
+
+	   .waves {
+	       height: 40px;
+	       min-height: 40px;
+	   }
+
+	   .w-shadow-1{
+	       width: 40rem; height: 13rem;
+	   }
+
+	   /* navbar */
+	   .navbar{
+	       height: 4rem;
+	       max-width: 350px !important;
+	   }
+
+	   .nav-buttom{
+	       height: 4rem;
+	   }
+
+	   .radius-nav{
+	       border-radius: 30px 30px 0px 0px;
+	   }
+
+	   .flex-fill{
+	       width: 4.3em;
+	   }
+
+	   .icon-nav-buttom-b{
+	       width: 1.5em;
+	   }
+
+	   .icon-nav-buttom-m{
+	       width: 1.5em;
+	   }
+
+	   .icon-nav-buttom-a{
+	       width: 1.5em;
+	   }
+
+	   .nav-title{
+	       font-size: 13px;
+	   }
+
+	   .app-font-1{
+	       font-size:14px;
+	   }
+
+	   .w-shadow-1{
+	       width: 18.5rem; height: 16rem;
+	   }
+
+	   span.icon-love {
+	       margin-right: 10px;
+	   }
+
+	   .p-time{
+	       padding-right: 10px;
+	       padding-left: 10px;
+	   }
+
+	   .mt-100{
+	       margin-top: 40px;
+	   }
+
+	   span.line-one {
+	       height: 270px;
+	       left:22px;
+	   }
+
+	   span.line-last {
+	       height: 144px;
+	   }
+
+	   .width-ctuk-1{
+	       width: 23rem;
+	   }
+
+	   .width-maps-1{
+	       width: 23rem;
+	   }
+
+	   .wh-maps{
+	       width: 22rem;
+	       border:0;
+	   }
+
+	   .size-mobile{
+	       font-size: 15px;
+	   }
+
+	   .size-mobile{
+	       font-size: 14px;
+	   }
+
+	   .font-size-55{
+	       font-size: 35px;
+	   }
+
+	   .posisi-image {
+	       width: 12.5em;
+	       margin-top: -170px;
+	   }
+	}
+
+	@media (min-width: 200px) and (max-width: 324px) {
+	   .componen-left{
+	       width: 14rem;
+	       z-index: -1;
+	   }
+
+	   .componen-right{
+	       width: 10rem;
+	       z-index: -1;
+	   }
+
+	   .flower-right-2{
+	       margin-top: -200px;
+	       width: 20rem;
+	       z-index: -1;
+	   }
+
+	   .flower-left-2{
+	       margin-top: -250px;
+	       width: 17rem;
+	       z-index: -1;
+	   }
+
+	   .flower-right-3{
+	       display: none;
+	   }
+
+	   .flower-left-3{
+	       display: none;
+	   }
+
+	   .flower-right-4{
+	       display: none;
+	   }
+
+	   .flower-left-4{
+	       display: none;
+	   }
+
+	   .waves {
+	       height: 40px;
+	       min-height: 40px;
+	   }
+
+	   .w-shadow-1{
+	       width: 40rem; height: 13rem;
+	   }
+
+	   /* navbar */
+	   .navbar{
+	       height: 3.7rem;
+	       max-width: 300px !important;
+	   }
+
+	   .nav-buttom{
+	       height: 4rem;
+	   }
+
+	   .radius-nav{
+	       border-radius: 30px 30px 0px 0px;
+	   }
+
+	   .flex-fill{
+	       width: 3.7em;
+	   }
+
+	   .icon-nav-buttom-b{
+	       width: 1.5em;
+	   }
+
+	   .icon-nav-buttom-m{
+	       width: 1.5em;
+	   }
+
+	   .icon-nav-buttom-a{
+	       width: 1.1em;
+	   }
+
+	   .nav-title{
+	       font-size: 10px;
+	   }
+
+	   .app-font-1{
+	       font-size:14px;
+	   }
+
+	   .w-shadow-1{
+	       width: 18.5rem; height: 16rem;
+	   }
+
+	   span.icon-love {
+	       margin-right: 10px;
+	   }
+
+	   .p-time{
+	       padding-right: 10px;
+	       padding-left: 10px;
+	   }
+
+	   .mt-100{
+	       margin-top: 40px;
+	   }
+
+	   span.line-one {
+	       height: 270px;
+	       left:22px;
+	   }
+
+	   span.line-last {
+	       height: 144px;
+	   }
+
+	   .width-ctuk-1{
+	       width: 23rem;
+	   }
+
+	   .width-maps-1{
+	       width: 23rem;
+	   }
+
+	   .wh-maps{
+	       width: 22rem;
+	       border:0;
+	   }
+
+	   .size-mobile{
+	       font-size: 14px;
+	   }
+
+	   .font-size-55{
+	       font-size: 30px;
+	   }
+
+	   .posisi-image {
+	       width: 12em;
+	       margin-top: -190px;
+	   }
+	}
+
+
+	</style>
+	<style>
+	       #click {
+	   display: none;
+	}
+
+	.btn-audio{
+	   border: none;
+	}
+
+	.label-box {
+	   position: fixed;
+	   right: 30px;
+	   bottom: 30px;
+	   height: 30px;
+	   width: 30px;
+	   background: -webkit-linear-gradient(left, #c5afa0, #c5afa0);
+	   text-align: center;
+	   line-height: 55px;
+	   border-radius: 10px;
+	   font-size: 50px;
+	   color: #fff;
+	   cursor: pointer;
+	   z-index: 1031;
+	   transition: transform .2s;
+	}
+
+	.icon-chatbox {
+	   position: absolute;
+	   color: #fff;
+	   width: 20px;
+	   top: 15px;
+	   transform: translate(-50%, -50%);
+	   transition: all 0.4s ease;
+	}
+
+	.label-box:hover {
+	   -ms-transform: scale(1.1);
+	   /* IE 9 */
+	   -webkit-transform: scale(1.1);
+	   /* Safari 3-8 */
+	   transform: scale(1.1);
+	}
+
+	@media (max-width: 992px) {
+	   .label-box {
+	       right: 25px;
+	       bottom: 130px;
+	   }
+	}
+
+	@media (max-width: 576px) {
+	   .label-box {
+	       right: 25px;
+	       bottom: 130px;
+	   }
+
+	   .icon-chatbox {
+	       position: absolute;
+	       top: 49%;
+	       left: 50%;
+	       transform: translate(-50%, -50%);
+	       transition: all 0.4s ease;
+	   }
+	}
+	</style>
+	<style>
+	       .bg-image {
+	           background-image: url("https://wekita.id/wp-content/uploads/2023/03/Mini-Picture3-1.webp");
+	           background-image: url("https://wekita.id/wp-content/uploads/2023/02/Picture1-4-1.webp");
+	           background-repeat: no-repeat;
+	           background-size: cover;
+	           background-position: center;
+	           background-attachment: fixed;
+	          
+	            
+	           
+	       }
+	       
+	       .bg-image-card {
+	           background-image: url("https://wekita.id/wp-content/uploads/2023/03/Mini-Picture3-1.webp");
+	           background-size: cover;
+	           background-position: center;
+	           background-attachment: fixed;
+	         
+	       }
+	</style>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Palanquin:100,400,700,900|Great+Vibes:100,400,700,900" rel="stylesheet">
+	<link href="https://wedew.id/combine/7d37895ab7e295116d51d2f6c5fc78bc-1682791473.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-image">
+	<div class="website-blocks has-cover">
+		<div class="website-cover">
+			<section class="website-block hero bg-light text-heading-primary text-link-primary text-primary text-center font-size-xs noshade overlay-none py-5 justify-content-center align-items-center overflow-hidden" id="block-xih5C" style="">
+				<div class="slots" style="display: flex; position: absolute; top: 0; left: 0; right: 0; bottom: 0; align-items: center; justify-content: center;">
+					<div class="slot position-absolute d-none d-lg-none d-xl-block" style="bottom: 0; transform: translateY(90px); width: 800px; height: ;">
+						<div class="w-100 h-100" data-aos="fade" data-aos-delay="500" data-aos-duration="400"><img alt="" class="" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg52Xj45VBrf-eRj-s8fiST56XBnt9Z_igyurIYRUYmcePdheKwNFaS28CnIlDS0YdtNHo1yLMDomS17AA3ozLVTkYqbh6uXQoj6C30ysE7pFYo6Cy9C7Udpl9iEASqWX5iWcZ5_5NHz0ur_JZ1_7e6cl7utj-ajhB0Me5YMYnG37xTCUhTyA1eS-IGmw/s887/frame-bottom.png.svg" width="100%"></div>
+					</div>
+					<div class="slot position-absolute d-lg-block d-xl-none" style="bottom: 0; transform: ; width: 450px; height: ;">
+						<div class="w-100 h-100" data-aos="fade" data-aos-delay="500" data-aos-duration="400"><img alt="" class="" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg52Xj45VBrf-eRj-s8fiST56XBnt9Z_igyurIYRUYmcePdheKwNFaS28CnIlDS0YdtNHo1yLMDomS17AA3ozLVTkYqbh6uXQoj6C30ysE7pFYo6Cy9C7Udpl9iEASqWX5iWcZ5_5NHz0ur_JZ1_7e6cl7utj-ajhB0Me5YMYnG37xTCUhTyA1eS-IGmw/s887/frame-bottom.png.svg" width="100%"></div>
+					</div>
+					<div class="slot position-absolute d-none d-lg-none d-xl-block" style="top: 0; transform: translateX(-20px) translateY(-130px); width: 1000px; height: ;">
+						<div class="w-100 h-100" data-aos="fade" data-aos-delay="700" data-aos-duration="400"><img alt="" class="" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMZPHIgoKlFzPdRdTocw8t_LrnBNffzipp7ZRFptl9YY4-dSH0Vt397DzkNI7Gjj54oLrg3ww2Owm0255TgBnobbqsZB1eE1Kh5NC7Z2yhXvPBd5xkrNTIx8zjjOb_ywaXK1lSU9vECS075fhL5TXzavpO9euije3S6s7-U-xlX075cWDb3wPnSMU2dA/s893/frame-top.png.svg" width="100%"></div>
+					</div>
+					<div class="slot position-absolute d-lg-block d-xl-none" style="top: 0; transform: translateX(-25px) translateY(-60px); width: 600px; height: ;">
+						<div class="w-100 h-100" data-aos="fade" data-aos-delay="400" data-aos-duration="400"><img alt="" class="" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMZPHIgoKlFzPdRdTocw8t_LrnBNffzipp7ZRFptl9YY4-dSH0Vt397DzkNI7Gjj54oLrg3ww2Owm0255TgBnobbqsZB1eE1Kh5NC7Z2yhXvPBd5xkrNTIx8zjjOb_ywaXK1lSU9vECS075fhL5TXzavpO9euije3S6s7-U-xlX075cWDb3wPnSMU2dA/s893/frame-top.png.svg" width="100%"></div>
+					</div>
+				</div>
+				<div class="position-relative container" style="border-width: -100px; border-radius: 8px">
+					<div class="d-flex align-items-center justify-content-center position-absolute w-100 h-100" style="top: 0; left: 0;"></div>
+					<div class="py-4">
+						<img alt="The Wedding of Andhika &amp; Zara" class="img-fluid my-3" data-aos="zoom-in" src="https://wekita.id/wp-content/uploads/2023/03/BAHAN-TEMA-02-CO-AK-1.webp" style="max-height: 200px;">
+						<div class="lead" data-aos="fade-down">
+							THE WEDDING OF
+						</div>
+						<h1 class="" data-aos="zoom-in" style="font-size: 3rem; font-family:">Aji  &amp; Eka </h1>
+						<div class="h5 font-weight-bold" data-aos="fade-up" data-aos-delay="300" style="letter-spacing: 4px;">
+							Kepada Bapak/Ibu/Saudara/i
+						</div>
+						<h3 class="my-4" data-aos="zoom-in" style="font-size: 3rem;">
+						<script type="text/javascript">
+						                                  const params = new URLSearchParams(document.location.search);
+						                                  const s = params.get("ke");
+						                                  document.write('<h2 style="text-align: center;  font-family: Sans-serif;">' + s + '<\/h2>');
+						</script></h3>
+					</div>
+				</div>
+				<div class="btn-floating">
+					<div class="btn btn-primary shadow px-4 py-3" onclick="$('.website-blocks').toggleClass('has-cover'); typeof playMusic != 'undefined' && playMusic();" style="border-radius: 27px 27px 27px 27px;">
+						Buka Undangan <i class="fa fa-fw fa-envelope-open"></i>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="bg-image" data-bs-offset="50" data-bs-spy="scroll" data-bs-target=".navbar">
+			<nav class="navbar navbar-bottom fixed-bottom radius-nav shadow">
+				<div class="container p-0">
+					<ul class="navbar-nav nav-flex-icons">
+						<li class="nav-item flex-fill">
+							<a class="nav-link p-0 active" href="#home"><span class="icon span-icon-nav-buttom"><i class="fa fa-home" style="color: #4E1818;"></i></span> <span class="nav-title">Home</span></a>
+						</li>
+						<li class="nav-item flex-fill">
+							<a class="nav-link p-0 active" href="#mempelai"><span class="icon span-icon-nav-buttom"><i class="fa fa-heart" style="color: #4E1818;"></i></span> <span class="nav-title">Mempelai</span></a>
+						</li>
+						<li class="nav-item flex-fill">
+							<a class="nav-link p-0 active" href="#acara"><span class="icon span-icon-nav-buttom"><i class="fa fa-calendar" style="color: #4E1818;"></i></span> <span class="nav-title">Acara</span></a>
+						</li>
+						<li class="nav-item flex-fill">
+							<a class="nav-link p-0 active" href="#kado"><span class="icon span-icon-nav-buttom"><i class="fa fa-gift" style="color: #4E1818;"></i></span> <span class="nav-title">Kado</span></a>
+						</li>
+						<li class="nav-item flex-fill">
+							<a class="nav-link p-0 active" href="#ucapan"><span class="icon span-icon-nav-buttom"><i class="fa fa-comment" style="color: #4E1818;"></i></span> <span class="nav-title">Ucapan</span></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="d-flex flex-row"><img class="float-start img-fluid mx-auto d-block img-flower" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMZPHIgoKlFzPdRdTocw8t_LrnBNffzipp7ZRFptl9YY4-dSH0Vt397DzkNI7Gjj54oLrg3ww2Owm0255TgBnobbqsZB1eE1Kh5NC7Z2yhXvPBd5xkrNTIx8zjjOb_ywaXK1lSU9vECS075fhL5TXzavpO9euije3S6s7-U-xlX075cWDb3wPnSMU2dA/s893/frame-top.png.svg"></div>
+			<div class="container" id="home">
+				<div class="row">
+					<div class="col-12">
+						<div class="text-center">
+							<p class="font-tree fs-2 font-bold color-one mt-4">THE WEDDING OF</p><br>
+						</div>
+					</div>
+				</div>
+				<div class="d-flex justify-content-center">
+					<div class="text-center"><img src="https://wekita.id/wp-content/uploads/2023/03/BAHAN-TEMA-02-CO-AK-1.webp" style="margin-top: -25px;" width="250"></div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="text-center">
+							<p class="font-one color-one font-size-55">Aji & Eka</p>
+							<p class="font-tree fs-3 font-bold color-one" style="margin-top: -15px;">Minggu, 02 Juli 2023</p>
+							<p class="font-tree fs-7 font-bold color-one mt-2">Kami berharap anda menjadi bagian dari hari istimewa kami!</p>
+						</div>
+						<div class="d-flex justify-content-center font-tree fw-bold">
+							<span class="p-2"></span>
+							<div class="shadow p-time py-2 mb-5 bg-default rounded-default text-white" id="d">
+								<span class="p-2"></span>
+								<h5 class="card-title text-center"><span class="p-2">0</span></h5>
+								<p class="card-text text-center" style="margin-top: -10px; color: #4E181"><span class="p-2">Hari</span></p>
+							</div><span class="p-2"></span>
+							<div class="shadow p-time py-2 mb-5 bg-default rounded-default text-white" id="h">
+								<span class="p-2"></span>
+								<h5 class="card-title text-center"><span class="p-2">0</span></h5>
+								<p class="card-text text-center" style="margin-top: -10px;"><span class="p-2">Jam</span></p>
+							</div><span class="p-2"></span>
+							<div class="shadow p-time py-2 mb-5 bg-default rounded-default text-white" id="m">
+								<span class="p-2"></span>
+								<h5 class="card-title text-center"><span class="p-2">0</span></h5>
+								<p class="card-text text-center" style="margin-top: -10px;"><span class="p-2">Menit</span></p>
+							</div><span class="p-2"></span>
+							<div class="shadow p-time py-2 mb-5 bg-default rounded-default text-white" id="s">
+								<span class="p-2"></span>
+								<h5 class="card-title text-center"><span class="p-2">0</span></h5>
+								<p class="card-text text-center" style="margin-top: -10px;"><span class="p-2">Detik</span></p>
+							</div>
+						</div>
+						<script>
+						  // Set the date we're counting down to
+						  var countDownDate = new Date("Jul 2, 2023 10:00:00").getTime();
+						  
+						  // Update the count down every 1 second
+						  var x = setInterval(function() {
+						  
+						    // Get today's date and time
+						    var now = new Date().getTime();
+						  
+						    // Find the distance between now and the count down date
+						    var distance = countDownDate - now;
+						  
+						    // Time calculations for days, hours, minutes and seconds
+						    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+						    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+						    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+						    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+						  
+						    // Display the result in the element with id="demo"
+						    document.getElementById("d").innerHTML = "<center>" + days + "<br />"  + "Hari" + "<center/>";
+						      // Display the result in the element with id="demo"
+						      document.getElementById("h").innerHTML = "<center>" +  hours + "<br />"  + "Jam" + "<center/>";
+						      // Display the result in the element with id="demo"
+						      document.getElementById("m").innerHTML = "<center>" +  minutes + "<br />"  + "Menit" + "<center/>";
+						      // Display the result in the element with id="demo"
+						      document.getElementById("s").innerHTML = "<center>" +  seconds + "<br />"  + "Detik" + "<center/>";
+						  
+						    // If the count down is finished, write some text
+						    if (distance < 0) {
+						      clearInterval(x);
+						      document.getElementById("demo").innerHTML = "EXPIRED";
+						    }
+						  }, 1000);
+						</script>
+					</div>
+				</div>
+			</div>
+			<section class="bg-default">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="text-center">
+								<div class="d-flex justify-content-center mt-100">
+									<div class="text-center">
+										<p class="font-one fs-1 mt-4 text-white">Assalamu'alaikum Wr. Wb.</p>
+									</div>
+								</div>
+								<p class="font-tree fs-5 text-white" style="margin-top: -15px;">Maha suci Allah yang telah menciptakan makhluk- nya berpasang-pasangan. Ya Allah, perkenankanlah kami merangkaikan kasih sayang yang kau ciptakan diantara kami</p><br>
+								<br>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section><svg class="waves rotate-img-180" preserveaspectratio="none" viewbox="0 24 150 28" xmlns="http://www.w3.org/2000/svg">
+			<defs>
+				<path d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" id="gentle-wave"></path>
+			</defs>
+			<g class="parallax">
+				<use fill="rgb(226, 215, 208)" x="48" xlink:href="#gentle-wave" y="0"></use>
+				<use fill="rgb(207, 188, 176)" x="48" xlink:href="#gentle-wave" y="3"></use>
+				<use fill="rgb(187, 161, 144)" x="48" xlink:href="#gentle-wave" y="5"></use>
+				<use fill=" #c5afa0" x="48" xlink:href="#gentle-wave" y="7"></use>
+			</g></svg>
+			<section id="mempelai">
+				<div class="d-flex flex-row-reverse"><img class="rounded float-end img-fluid flower-left-3 componen-left rotate-img-180" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNjWsR7S5dy2BRxYwM9HyEBn2q1ku_ZiUndY_qPr4qY4D3aHaJv4nr2XdmBM2iVMgtwLVf5PPf_fofCI7lHTc1cHfy7J1SEsNTaXIHfyxO5p5a_tyx0zXIHpIbkcSIyR1YO51ZA6ol_j4lF-AYYFRbvGAT3n0RIg79D3mr9SFWBZEu___GD3shDomAww/s217/flower01.png.svg"></div>
+				<div class="d-flex flex-row componen-right"><img class="rounded float-start img-fluid flower-right-3" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNjWsR7S5dy2BRxYwM9HyEBn2q1ku_ZiUndY_qPr4qY4D3aHaJv4nr2XdmBM2iVMgtwLVf5PPf_fofCI7lHTc1cHfy7J1SEsNTaXIHfyxO5p5a_tyx0zXIHpIbkcSIyR1YO51ZA6ol_j4lF-AYYFRbvGAT3n0RIg79D3mr9SFWBZEu___GD3shDomAww/s217/flower01.png.svg"></div>
+				<div class="container">
+					<div class="row mt-3">
+						<div class="col-12">
+							<div class="text-center">
+								<div class="d-flex justify-content-center mt-5">
+									<div class="text-center"><img src="https://wekita.id/wp-content/uploads/2023/03/BAHAN-TEMA-02-W-1.webp" width="250"></div>
+								</div>
+								<p class="font-one color-one font-size-55">Eka Putri Rahayu</p>
+								<p class="font-tree color-one fs-5" style="margin-top: -15px;">Putri Bapak Witanto & Ibu Surati</p>
+								<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path></svg></a>
+								<path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path></svg></a>
+								<p class="mt-5 font-one fs-1 color-one">&</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="text-center">
+								<div class="d-flex justify-content-center mt-4">
+									<div class="text-center"><img src="https://wekita.id/wp-content/uploads/2023/03/BAHAN-TEMA-02-P-1.webp" width="250"></div>
+								</div>
+								<p class="font-one color-one font-size-55">Noor Rochmad Wahyu Aji </p>
+								<p class="font-tree color-one fs-5" style="margin-top: -15px;">Putra (Alm) Bapak Ali Said & (Alm) Ibu Juariatun</p><a class="p-2" href="#">
+								<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path></svg></a> <a class="p-2" href="#">
+								<path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path></svg></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section><svg class="waves" preserveaspectratio="none" viewbox="0 24 150 28" xmlns="http://www.w3.org/2000/svg">
+			<defs>
+				<path d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" id="gentle-wave"></path>
+			</defs>
+			<g class="parallax">
+				<use fill="rgb(226, 215, 208)" x="48" xlink:href="#gentle-wave" y="0"></use>
+				<use fill="rgb(207, 188, 176)" x="48" xlink:href="#gentle-wave" y="3"></use>
+				<use fill="rgb(187, 161, 144)" x="48" xlink:href="#gentle-wave" y="5"></use>
+				<use fill=" #c5afa0" x="48" xlink:href="#gentle-wave" y="7"></use>
+			</g></svg>
+			<section class="bg-default-one"></section>
+			<div class="container" id="acara">
+				<div class="row">
+					<div class="col-12">
+						<div class="text-center">
+							<p class="font-one font-size-55 text-brown mt-100 mt-5">Save The Date</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row mt-3 pb-5">
+					<div class="grid">
+						<div class="d-flex justify-content-center">
+							<div class="col-lg-9 col-md-12">
+								<div class="text-center">
+									<div class="shadow px-4 py-3 bg-image-card rounded mt-2" style="height: 18rem;">
+										<p class="fs-4 font-one color-one font-bold">Akad Nikah</p>
+										<hr class="border border-default border-2 opacity-50">
+										<p class="fs-6 font-tree color-one font-bold">Minggu, 02 Juli 2023</p>
+										<p class="fs-6 font-tree color-one font-bold">Pukul 08.00 WIB</p>
+										<p class="fs-6 font-tree color-one font-bold">Alamat : Dk. Bangking, RT/RW 002/003, Kel. Tambahrejo, Kec. Blora, kab. Blora</p>
+									</div><br>
+									<br>
+									<div class="shadow px-4 py-3 bg-image-card rounded mt-2" style="height: 18rem;">
+										<p class="fs-4 font-one color-one font-bold">Resepsi</p>
+										<hr class="border border-default border-2 opacity-50">
+										<p class="fs-6 font-tree color-one font-bold">Minggu, 02 Juli 2023</p>
+										<p class="fs-6 font-tree color-one font-bold">Pukul 10.00 WIB - Selesai</p>
+										<p class="fs-6 font-tree color-one font-bold">Alamat : Dk. Bangking, RT/RW. 002/003, Kel. Tambahrejo, Kec. Blora, kab. Blora</p>
+									</div>
+									<div class="shadow px-2 py-2 bg-image-card rounded mt-5 width-maps-5">
+										<iframe allowfullscreen aria-hidden="false" frameborder="0" height="250" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3960.2848460744995!2d111.39962101477322!3d-6.97568079496062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNTgnMzIuNSJTIDExMcKwMjQnMDYuNSJF!5e0!3m2!1sen!2sid!4v1684104887267!5m2!1sen!2sid" style="border:0;" tabindex="0" width="300"></iframe>
+									</div>
+									<div class="mt-5">
+										<a class="btn btn-default font-two fw-bold mt-min15 px-4" href="https://goo.gl/maps/4RYB4DhvBFHNc5ow9"><svg class="bi bi-geo-alt" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"></path>
+										<path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path></svg> Lokasi</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mt-5">
+				<svg class="waves" preserveaspectratio="none" viewbox="0 24 150 28" xmlns="http://www.w3.org/2000/svg">
+				<defs>
+					<path d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" id="gentle-wave"></path>
+				</defs>
+				<g class="parallax">
+					<use fill="rgb(226, 215, 208)" x="48" xlink:href="#gentle-wave" y="0"></use>
+					<use fill="rgb(207, 188, 176)" x="48" xlink:href="#gentle-wave" y="3"></use>
+					<use fill="rgb(187, 161, 144)" x="48" xlink:href="#gentle-wave" y="5"></use>
+					<use fill=" #c5afa0" x="48" xlink:href="#gentle-wave" y="7"></use>
+				</g></svg>
+				<section class="bg-default">
+					<br>
+					<br>
+					<br>
+				</section><svg class="waves rotate-img-180" preserveaspectratio="none" viewbox="0 24 150 28" xmlns="http://www.w3.org/2000/svg">
+				<defs>
+					<path d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" id="gentle-wave"></path>
+				</defs>
+				<g class="parallax">
+					<use fill="rgb(226, 215, 208)" x="48" xlink:href="#gentle-wave" y="0"></use>
+					<use fill="rgb(207, 188, 176)" x="48" xlink:href="#gentle-wave" y="3"></use>
+					<use fill="rgb(187, 161, 144)" x="48" xlink:href="#gentle-wave" y="5"></use>
+					<use fill=" #c5afa0" x="48" xlink:href="#gentle-wave" y="7"></use>
+				</g></svg>
+			</div>
+			<section class="">
+				<div class="container" id="kado">
+					<div class="row mt-3 pb-5">
+						<div class="grid">
+							<div class="d-flex justify-content-center">
+								<div class="col-lg-8 col-md-12">
+									<div class="text-center">
+										<div class="row mb-4">
+											<div class="col-12">
+												<div class="text-center">
+													<p class="font-one font-size-55 color-one mt-5">Amplop Digital</p>
+													<p class="font-tree fs-5 color-one" style="margin-top: -15px;">Doa Restu Anda merupakan karunia yang sangat berarti bagi kami. Dan jika memberi adalah ungkapan tanda kasih Anda, Anda dapat memberi kado secara cashless.</p>
+												</div>
+											</div>
+										</div>
+										<div class="shadow px-4 py-3 bg-image-card rounded mt-2" style="height: 14rem;">
+											<img src="https://wekita.id/wp-content/uploads/2023/03/BANKBRI-768x161.png" width="120">
+											<hr class="border border-default border-2 opacity-50">
+											<div class=" fs-4 font-tree color-one font-bold copy-content spancontent">
+												001001067922501
+											</div><a class="elementor-button" data-message="berhasil disalin" onclick="copyText(this)" role="button" style="cursor:pointer;">
+											<div class="elementor-button-content-wrapper">
+												<span class="elementor-button-icon elementor-align-icon-left"><i aria-hidden="true" class="far fa-copy"></i></span> <span class="elementor-button-text">Copy Text</span>
+											</div></a>
+											<p class="fs-4 font-tree color-one font-bold">An. Noor Rochmad Wahyu Aji </p>
+										</div>
+										<div class="shadow px-4 py-3 bg-image-card rounded mt-5" style="height: 14rem;">
+											<p class="font-tree fs-1 color-one font-bold">KIRIM HADIAH</p>
+											<hr class="border border-default border-2 opacity-50">
+											<p class="fs-7 font-tree color-one font-bold">Alamat</p>
+											<p class="fs-7 font-tree color-one font-bold mt-min15">Dk. Bangking, RT/RW 002/003, Kel. Tambahrejo, Kec. Blora, kab. Blora</p>
+										</div>
+										<script>
+										function copyText(el) {
+										  var content = jQuery(el).siblings('div.copy-content').html()
+										  var temp = jQuery("<textarea>");
+										  jQuery("body").append(temp);
+										  temp.val(content.replace(/<br ?\/?>/g, "\n")).select();
+										  document.execCommand("copy");
+										  temp.remove();
+										  var text = jQuery(el).html()
+										  jQuery(el).html(jQuery(el).data('message'))
+										  var counter = 0;
+										  var interval = setInterval(function() {
+										      counter++;
+										      if (counter == 1) {
+										          jQuery(el).html(text)
+										      }
+										  }, 500);
+										}
 
-<div class="embed-responsive embed-responsive-4by3">
-	<iframe class="embed-responsive-item" src="https://zejiaisna.000webhostapp.com/index.php"></iframe>
-</div>
+										</script>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="bg-default">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="text-center py-5">
+								<p class="font-tree fs-5 text-white mt-5">"Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir."</p>
+								<p class="font-tree fs-5 text-white">berfikir." (Q.S Ar Rum : 21)</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section><svg class="waves rotate-img-180" preserveaspectratio="none" viewbox="0 24 150 28" xmlns="http://www.w3.org/2000/svg">
+			<defs>
+				<path d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" id="gentle-wave"></path>
+			</defs>
+			<g class="parallax">
+				<use fill="rgb(226, 215, 208)" x="48" xlink:href="#gentle-wave" y="0"></use>
+				<use fill="rgb(207, 188, 176)" x="48" xlink:href="#gentle-wave" y="3"></use>
+				<use fill="rgb(187, 161, 144)" x="48" xlink:href="#gentle-wave" y="5"></use>
+				<use fill=" #c5afa0" x="48" xlink:href="#gentle-wave" y="7"></use>
+			</g></svg>
+            
+			<div class="container" id="ucapan">
+				<div class="row">
+					<div class="col-12">
+						<div class="text-center">
+							<p class="font-one font-size-55 color-one mt-100">Ucapkan Sesuatu</p>
+							<p class="font-tree fs-4 color-one" style="margin-top: -25px;">Berikan Ucapan & Doa Restu</p>
+						</div>
+					</div>
+					<div class="grid">
+						<div class="d-flex justify-content-center">
+							<div class="col-xl-8 col-lg-12">
+								
+								<div class="embed-responsive embed-responsive-4by3">
+									<iframe  class="embed-responsive-item"   src="https://zejiaisna.000webhostapp.com/index.php"></iframe>
+								</div>
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mt-5">
+				<svg class="waves" preserveaspectratio="none" viewbox="0 24 150 28" xmlns="http://www.w3.org/2000/svg">
+				<defs>
+					<path d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" id="gentle-wave"></path>
+				</defs>
+				<g class="parallax">
+					<use fill="rgb(226, 215, 208)" x="48" xlink:href="#gentle-wave" y="0"></use>
+					<use fill="rgb(207, 188, 176)" x="48" xlink:href="#gentle-wave" y="3"></use>
+					<use fill="rgb(187, 161, 144)" x="48" xlink:href="#gentle-wave" y="5"></use>
+					<use fill=" #c5afa0" x="48" xlink:href="#gentle-wave" y="7"></use>
+				</g></svg>
+				<section class="bg-default">
+					<br>
+					<br>
+					<br>
+				</section><svg class="waves rotate-img-180" preserveaspectratio="none" viewbox="0 24 150 28" xmlns="http://www.w3.org/2000/svg">
+				<defs>
+					<path d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" id="gentle-wave"></path>
+				</defs>
+				<g class="parallax">
+					<use fill="rgb(226, 215, 208)" x="48" xlink:href="#gentle-wave" y="0"></use>
+					<use fill="rgb(207, 188, 176)" x="48" xlink:href="#gentle-wave" y="3"></use>
+					<use fill="rgb(187, 161, 144)" x="48" xlink:href="#gentle-wave" y="5"></use>
+					<use fill=" #c5afa0" x="48" xlink:href="#gentle-wave" y="7"></use>
+				</g></svg>
+			</div>
+			<div class="container">
+				<div class="row mt-3 pb-5">
+					<div class="grid">
+						<div class="d-flex justify-content-center">
+							<div class="col-lg-8 col-md-12">
+								<div class="text-center">
+									<div class="d-flex justify-content-center mt-5"><img class="posisi-image" src="https://wekita.id/wp-content/uploads/2023/03/BAHAN-TEMA-02-CO-AK-1.webp" width="370"></div>
+									<p class="font-tree fs-5 color-one font-bold mt-100">Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu. Atas kehadiran dan doa restunya, kami mengucapkan terima kasih.</p>
+									<p class="font-one fs-1 color-one">Wassalamu'alaikum Wr. Wb</p>
+									<p class="font-one fs-3 color-one mt-5">Aji & Eka</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section>
+				<audio autoplay id="audio" loop="loop">
+                    <source src="https://wekita.id/wp-content/uploads/2023/02/HARI-BAHHAGIA-ATTA-Halilintar-menit-ke-1.30.mp3" type="audio/mp3">
+                </audio> 
+                <button class="btn btn-audio" id="playPauseBTN" onclick="playPause()">
+                    <label class="label-box" for="click">
+                        <svg class="bi bi-play-circle icon-chatbox" viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+				            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+				            <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                        </svg>
+                    </label>
+                </button> 
+				<script>
+				        var audio = document.getElementById('audio');
+				        var playPauseBTN = document.getElementById('playPauseBTN');
+				        var count = 0;
+
+				        function playPause() {
+				            if (count == 0) {
+				                count = 1;
+				                audio.play();
+				            } else {
+				                count = 0;
+				                audio.pause();
+				            }
+				        }
+
+				        function stop() {
+				            playPause()
+				            audio.pause();
+				            audio.currentTime = 0
+				        }
+				</script>
+			</section><br>
+			<br>
+			<br>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js">
+			</script> <!-- latest jquery file -->
+			 
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+			</script> <!-- Owl Carousel -->
+			 
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+			</script> <!-- custom JS code after importing jquery and owl -->
+			 
+			<script type="text/javascript">
+			     var slider = $('#sliderDonasi');
+			     slider.owlCarousel({
+			         stagePadding: 15,
+			         loop: false,
+			         margin: 20,
+			         responsiveClass: true,
+			         responsive: {
+			             0: {
+			                 items: 4,
+			                 nav: false
+			             },
+			             600: {
+			                 items: 4,
+			                 nav: false
+			             },
+			             1000: {
+			                 items: 4,
+			                 nav: false,
+			                 loop: false
+			             }
+			         },
+			         dots: true,
+			     });
+			     $('.play').on('click', function() {
+			         slider.trigger('play.owl.autoplay', [5000])
+			     })
+			     $('.stop').on('click', function() {
+			         slider.trigger('stop.owl.autoplay')
+			     })
+			</script> 
+			<script>
+			     $(function() {
+			         $('#ucapan').on('activate.bs.scrollspy')
+			     });
+			</script>
+		</div>
+	</div>
+	<script src="https://wedew.id/combine/7c4639ab1923047e45952ca6542e68db-1682791473.js">
+	</script> 
 </body>
 </html>
